@@ -1,4 +1,4 @@
-# Tutorial
+# User Tutorial
 
 The main components of User Tutorial Framework:
 
@@ -11,35 +11,36 @@ The main components of User Tutorial Framework:
 * Notice, don't override onKeyDown() or onKeyUp() to handle KEY_BACK or KEY_MENU events, you can just override onBackPressed() or onKeyDownOpenMenu() instead.
 
 * In your project you need to add Assets/tutorial_tips.xml. 
-
- $ id:                         (Type Integer) the value is number order
- $ screen:                 (Type String) the value is activity's name
- $ viewId:                  (Type String) the target view id name
- $ text:                      (Type String) the resource id of text, which will be placed in the tip.
- $ brand:                   (Type String Array) when [] is empty value, which means no brand limitation.
- $ permission:           (Type String Array) when [] is empty value, which means no permission limitation.
- $ hotPadding:          (Type String) the resource id of dimension, the padding value of hotspot.
- $ hotZoomIn:           (Type Boolean) true means hotspot is bigger than target view' s height.
- $ eventName:          (Type String) the value is using for Flurry, Event ID.
-
+```
+id:             (Type Integer) the value is number order
+screen:         (Type String) the value is activity's name
+viewId:         (Type String) the target view id name
+text:           (Type String) the resource id of text, which will be placed in the tip.
+brand:          (Type String Array) when [] is empty value, which means no brand limitation.
+permission:     (Type String Array) when [] is empty value, which means no permission limitation.
+hotPadding:     (Type String) the resource id of dimension, the padding value of hotspot.
+hotZoomIn:      (Type Boolean) true means hotspot is bigger than target view' s height.
+eventName:      (Type String) the value is using for Flurry, Event ID.
+```
 * Take an example, all what you need to do is:
 
- $ {
- $ "tips" : [
- $ {
- $ "id" : "1",
- $ "screen" : "target screen",
- $ "viewId" : "target view id", //res
- $ "text" : "tip string id", //res
- $ "brand": [],
- $ "permission": [],
- $ "hotPadding":"tutorial_tip_hot_padding_0dp",
- $ "hotZoomIn": false,
- $ "eventName":""
- $ }
- $ ]
- $ }
-
+```
+{
+"tips" : [
+{
+"id" : "1",
+"screen" : "target screen",
+"viewId" : "target view id", //res
+"text" : "tip string id", //res
+"brand": [],
+"permission": [],
+"hotPadding":"tutorial_tip_hot_padding_0dp",
+"hotZoomIn": false,
+"eventName":""
+}
+]
+}
+```
 
 ## License <a name="license"></a>
 
