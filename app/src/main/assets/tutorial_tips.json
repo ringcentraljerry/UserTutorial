@@ -1,0 +1,16 @@
+{
+   "tips" : [
+        {
+            "id" : "1",
+            "screen" : "MainActivity",
+            "viewId" : "testBtn",
+            "text" : "tip_text",
+            "brand": [],
+            "permission": [],
+            "hotPadding":"tutorial_tip_hot_padding_5dp",
+            "hotZoomIn": true,
+            "eventName":"",
+            "isFragment":false
+         }
+    ]
+}
