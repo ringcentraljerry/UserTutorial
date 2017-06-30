@@ -1,6 +1,6 @@
 # User Tutorial
 
-The main components of User Tutorial Framework:
+![Example](https://github.com/ringcentraljerry/UserTutorial/blob/master/tip_example.png)
 
 ## Getting started
 
